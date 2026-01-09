@@ -1,28 +1,26 @@
 # Site settings
-title: Your Blog Title
-description: A personal blog where I share my thoughts, experiences, and learnings
-url: "" # Update this to your site URL when deployed (e.g., https://username.github.io)
-baseurl: "" # For project sites use "/repository-name", for user sites leave empty
+title: Chris Infante
+description: Cyber Security and Cypherpunk Enthusiast
+url: "https://chris-iio.github.io"
+baseurl: ""
 
 # Author information
 author:
-  name: Your Name
-  email: your.email@example.com
-  bio: "Software developer, writer, and lifelong learner."
+  name: Chris
+  email: iio.ijc@proton.me
+  bio: "Cyber Security and Cypherpunk Enthusiast"
 
 # Social media links
 social:
-  github: your-github-username
-  twitter: your-twitter-handle
-  linkedin: your-linkedin-username
+  github: chris-iio
+  linkedin: chr1sinfante
 
 # Minima theme settings
 minima:
   skin: auto # Options: auto, classic, dark, solarized
   social_links:
-    - { platform: github, user_url: "https://github.com/your-github-username" }
-    - { platform: twitter, user_url: "https://twitter.com/your-twitter-handle" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/your-linkedin-username" }
+    - { platform: github, user_url: "https://github.com/chris-iio" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/chr1sinfante" }
 
 # SEO and metadata
 lang: en-US
