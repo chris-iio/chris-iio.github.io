@@ -13,15 +13,49 @@ body {
   background-color: #1a1a1a !important;
   border-top: none !important;
   border-bottom: 1px solid #404040 !important;
+  padding: 20px 0;
+}
+
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-title,
 .site-title:visited {
   color: #ffffff !important;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .site-nav {
-  background-color: #1a1a1a !important;
+  background-color: transparent !important;
+  border: none;
+  float: none;
+  position: static;
+}
+
+.site-nav .social-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-links .svg-icon {
+  width: 24px;
+  height: 24px;
+  fill: #e0e0e0;
+  transition: fill 0.3s;
+}
+
+.social-links a:hover .svg-icon {
+  fill: #ffffff;
 }
 
 .page-content {
