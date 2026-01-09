@@ -4,7 +4,21 @@
 @import "{{ site.theme }}";
 
 /* Dark grey theme */
+html {
+  background-color: #2b2b2b !important;
+}
+
 body {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+}
+
+main, .page-content, .wrapper {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+}
+
+.post, .post-content {
   background-color: #2b2b2b !important;
   color: #e0e0e0 !important;
 }
