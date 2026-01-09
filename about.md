@@ -1,4 +1,5 @@
 ---
-layout: blank
+layout: default
 permalink: /about/
+title: About
 ---
