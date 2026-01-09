@@ -1,94 +1,103 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+@import "minima/initialize";
 
-/* Dark grey theme */
-html {
-  background-color: #2b2b2b !important;
-}
-
-body {
+/* AGGRESSIVE DARK GREY THEME - Override everything */
+* {
   background-color: #2b2b2b !important;
   color: #e0e0e0 !important;
 }
 
-main, .page-content, .wrapper {
+html, body {
   background-color: #2b2b2b !important;
   color: #e0e0e0 !important;
 }
 
-.post, .post-content {
+main, .page-content, .wrapper, div, section, article {
   background-color: #2b2b2b !important;
   color: #e0e0e0 !important;
+}
+
+.post, .post-content, .post-header {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+}
+
+/* Header styles */
+.site-header, .site-header * {
+  background-color: #1a1a1a !important;
+  border-top: none !important;
 }
 
 .site-header {
-  background-color: #1a1a1a !important;
-  border-top: none !important;
   border-bottom: 1px solid #404040 !important;
-  padding: 20px 0;
+  padding: 20px 0 !important;
 }
 
 .site-header .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-color: #1a1a1a !important;
 }
 
 .site-title,
 .site-title:visited {
   color: #ffffff !important;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  background-color: #1a1a1a !important;
 }
 
 .site-nav {
-  background-color: transparent !important;
-  border: none;
-  float: none;
-  position: static;
+  background-color: #1a1a1a !important;
+  border: none !important;
+  float: none !important;
+  position: static !important;
 }
 
 .site-nav .nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+  background-color: #1a1a1a !important;
 }
 
 .nav-links a {
-  display: inline-flex;
-  align-items: center;
+  display: inline-flex !important;
+  align-items: center !important;
+  background-color: #1a1a1a !important;
 }
 
 .nav-links .page-link {
   color: #e0e0e0 !important;
-  font-size: 16px;
-  text-decoration: none;
+  font-size: 16px !important;
+  text-decoration: none !important;
+  background-color: #1a1a1a !important;
 }
 
 .nav-links .page-link:hover {
   color: #ffffff !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .nav-links .svg-icon {
-  width: 24px;
-  height: 24px;
-  fill: #e0e0e0;
-  transition: fill 0.3s;
+  width: 24px !important;
+  height: 24px !important;
+  fill: #e0e0e0 !important;
+  transition: fill 0.3s !important;
+  background-color: #1a1a1a !important;
 }
 
 .nav-links a:hover .svg-icon {
-  fill: #ffffff;
-}
-
-.page-content {
-  background-color: #2b2b2b !important;
+  fill: #ffffff !important;
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1200px !important;
+  background-color: #2b2b2b !important;
 }
 
 /* Hide footer completely */
@@ -99,14 +108,14 @@ main, .page-content, .wrapper {
 /* Link colors for dark theme */
 a {
   color: #64b5f6 !important;
-  text-decoration: none;
+  text-decoration: none !important;
+}
 
-  &:visited {
-    color: #90caf9 !important;
-  }
+a:visited {
+  color: #90caf9 !important;
+}
 
-  &:hover {
-    color: #42a5f5 !important;
-    text-decoration: underline;
-  }
+a:hover {
+  color: #42a5f5 !important;
+  text-decoration: underline !important;
 }
