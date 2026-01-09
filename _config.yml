@@ -1,0 +1,59 @@
+# Site settings
+title: Your Blog Title
+description: A personal blog where I share my thoughts, experiences, and learnings
+url: "" # Update this to your site URL when deployed (e.g., https://username.github.io)
+baseurl: "" # For project sites use "/repository-name", for user sites leave empty
+
+# Author information
+author:
+  name: Your Name
+  email: your.email@example.com
+  bio: "Software developer, writer, and lifelong learner."
+
+# Social media links
+social:
+  github: your-github-username
+  twitter: your-twitter-handle
+  linkedin: your-linkedin-username
+
+# Minima theme settings
+minima:
+  skin: auto # Options: auto, classic, dark, solarized
+  social_links:
+    - { platform: github, user_url: "https://github.com/your-github-username" }
+    - { platform: twitter, user_url: "https://twitter.com/your-twitter-handle" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/your-linkedin-username" }
+
+# SEO and metadata
+lang: en-US
+timezone: America/New_York # Update to your timezone
+
+# Navigation menu
+header_pages:
+  - index.md
+  - about.md
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md
+  - node_modules/

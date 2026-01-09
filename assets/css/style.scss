@@ -1,0 +1,82 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom styles for your blog */
+
+/* Customize colors - uncomment and modify as needed */
+/*
+:root {
+  --brand-color: #2a7ae2;
+  --brand-color-dark: #1756a9;
+  --text-color: #111;
+  --background-color: #fdfdfd;
+  --code-background-color: #f5f5f5;
+}
+*/
+
+/* Custom header styling */
+.site-header {
+  border-top: 5px solid var(--brand-color, #2a7ae2);
+  min-height: 56px;
+}
+
+.site-title {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* Post styling */
+.post-title {
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.post-content {
+  h2, h3, h4 {
+    margin-top: 2rem;
+  }
+}
+
+/* Code block styling */
+pre, code {
+  border-radius: 4px;
+}
+
+/* Improve link visibility */
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Footer styling */
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Custom button style (optional) */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--brand-color, #2a7ae2);
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--brand-color-dark, #1756a9);
+    text-decoration: none;
+  }
+}
