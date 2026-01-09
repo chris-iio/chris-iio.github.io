@@ -51,7 +51,7 @@ main, .page-content, .wrapper, div, section, article {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  gap: 80px !important;
+  gap: 150px !important;
   background-color: #1a1a1a !important;
 }
 
@@ -95,6 +95,7 @@ main, .page-content, .wrapper, div, section, article {
   font-size: 16px !important;
   text-decoration: none !important;
   background-color: #1a1a1a !important;
+  line-height: 1 !important;
 }
 
 .nav-links .page-link:hover {
@@ -103,12 +104,13 @@ main, .page-content, .wrapper, div, section, article {
 }
 
 .nav-links .svg-icon {
-  width: 20px !important;
-  height: 20px !important;
+  width: 16px !important;
+  height: 16px !important;
   fill: #e0e0e0 !important;
   transition: fill 0.3s !important;
   background-color: #1a1a1a !important;
   display: block !important;
+  margin: 0 !important;
 }
 
 .nav-links a:hover .svg-icon {
