@@ -36,25 +36,36 @@ body {
   position: static;
 }
 
-.site-nav .social-links {
+.site-nav .nav-links {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
-.social-links a {
+.nav-links a {
   display: inline-flex;
   align-items: center;
 }
 
-.social-links .svg-icon {
+.nav-links .page-link {
+  color: #e0e0e0 !important;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-links .page-link:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.nav-links .svg-icon {
   width: 24px;
   height: 24px;
   fill: #e0e0e0;
   transition: fill 0.3s;
 }
 
-.social-links a:hover .svg-icon {
+.nav-links a:hover .svg-icon {
   fill: #ffffff;
 }
 
