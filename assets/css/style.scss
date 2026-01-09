@@ -103,13 +103,12 @@ main, .page-content, .wrapper, div, section, article {
 }
 
 .nav-links .svg-icon {
-  width: 24px !important;
-  height: 24px !important;
+  width: 20px !important;
+  height: 20px !important;
   fill: #e0e0e0 !important;
   transition: fill 0.3s !important;
   background-color: #1a1a1a !important;
-  vertical-align: middle !important;
-  display: inline-block !important;
+  display: block !important;
 }
 
 .nav-links a:hover .svg-icon {
