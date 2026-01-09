@@ -61,6 +61,13 @@ main, .page-content, .wrapper, div, section, article {
   font-size: 24px !important;
   font-weight: 600 !important;
   background-color: #1a1a1a !important;
+  text-decoration: none !important;
+}
+
+.site-title:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  background-color: #1a1a1a !important;
 }
 
 .site-nav {
@@ -101,6 +108,8 @@ main, .page-content, .wrapper, div, section, article {
   fill: #e0e0e0 !important;
   transition: fill 0.3s !important;
   background-color: #1a1a1a !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
 }
 
 .nav-links a:hover .svg-icon {
