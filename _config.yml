@@ -1,46 +1,30 @@
 # Site settings
-title: cji-iio
+title: Chris Infante
 description: Cyber Security and Cypherpunk Enthusiast
 url: "https://chris-iio.github.io"
 baseurl: ""
 
-# Author information
+# Author
 author:
   name: Chris
   bio: "Cyber Security and Cypherpunk Enthusiast"
 
-# Social media links
+# Social
 social:
   linkedin: chr1sinfante
-
-# Minima theme settings
-minima:
-  skin: dark # Options: auto, classic, dark, solarized
-  social_links:
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/chr1sinfante" }
-
-# SEO and metadata
-lang: en-US
-timezone: America/New_York # Update to your timezone
+  github: chris-iio
+  twitter: chr1sinfante
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /blog/:year/:month/:day/:title/
+# Permalinks
+permalink: /blog/:year/:month/:day/:title/
 
-# Pagination
-paginate: 5
-paginate_path: "/blog/page:num/"
-
-# Exclude from processing
+# Exclude
 exclude:
   - Gemfile
   - Gemfile.lock
