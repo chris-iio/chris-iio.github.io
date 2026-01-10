@@ -1,0 +1,199 @@
+---
+---
+
+@import "minima";
+
+/* FORCE DARK GREY THEME - Override everything */
+html {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+}
+
+body {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+* {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+  border-color: #404040 !important;
+}
+
+main, .page-content, .wrapper, div, section, article {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+}
+
+.post, .post-content, .post-header {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+}
+
+/* Header styles */
+.site-header, .site-header * {
+  background-color: #1a1a1a !important;
+  border-top: none !important;
+}
+
+.site-header {
+  border-bottom: 1px solid #404040 !important;
+  padding: 20px 0 !important;
+}
+
+.site-header .wrapper {
+  background-color: #1a1a1a !important;
+}
+
+.site-header .header-content {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 200px !important;
+  background-color: #1a1a1a !important;
+}
+
+.site-title,
+.site-title:visited {
+  color: #ffffff !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  background-color: #1a1a1a !important;
+  text-decoration: none !important;
+}
+
+.site-title:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  background-color: #1a1a1a !important;
+}
+
+.site-nav {
+  background-color: #1a1a1a !important;
+  border: none !important;
+  float: none !important;
+  position: static !important;
+}
+
+.site-nav .nav-links {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background-color: #1a1a1a !important;
+}
+
+.nav-links a {
+  display: inline-flex !important;
+  align-items: center !important;
+  background-color: #1a1a1a !important;
+}
+
+.nav-links .page-link {
+  color: #e0e0e0 !important;
+  font-size: 16px !important;
+  text-decoration: none !important;
+  background-color: #1a1a1a !important;
+  line-height: 1 !important;
+}
+
+.nav-links .page-link:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.nav-links .svg-icon {
+  width: 16px !important;
+  height: 16px !important;
+  fill: #e0e0e0 !important;
+  transition: fill 0.3s !important;
+  background-color: #1a1a1a !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+.nav-links a:hover .svg-icon {
+  fill: #ffffff !important;
+}
+
+.wrapper {
+  max-width: 1200px !important;
+  background-color: #2b2b2b !important;
+}
+
+/* Hide footer completely */
+.site-footer {
+  display: none !important;
+}
+
+/* Link colors for dark theme */
+a {
+  color: #64b5f6 !important;
+  text-decoration: none !important;
+  background-color: transparent !important;
+}
+
+a:visited {
+  color: #90caf9 !important;
+  background-color: transparent !important;
+}
+
+a:hover {
+  color: #42a5f5 !important;
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+/* Post list styling */
+.post-list {
+  list-style: none !important;
+  padding: 0 !important;
+  background-color: #2b2b2b !important;
+}
+
+.post-list li {
+  background-color: #2b2b2b !important;
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #404040 !important;
+}
+
+.post-meta {
+  color: #888 !important;
+  font-size: 14px !important;
+  background-color: transparent !important;
+}
+
+.post-link {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  background-color: #2b2b2b !important;
+  color: #ffffff !important;
+}
+
+p, li, span, div {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+}
+
+code {
+  background-color: #1a1a1a !important;
+  color: #64b5f6 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+}
+
+pre {
+  background-color: #1a1a1a !important;
+  border: 1px solid #404040 !important;
+  padding: 15px !important;
+  border-radius: 5px !important;
+  overflow-x: auto !important;
+}
+
+pre code {
+  background-color: #1a1a1a !important;
+}

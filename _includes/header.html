@@ -1,18 +1,14 @@
-<header class="site-header">
-  <div class="wrapper">
-    <a class="site-title" href="{{ " /" | relative_url }}">{{ site.title }}</a>
+<header class="site-header" role="banner">
+  <div class="wrapper header-content">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">Chris Infante</a>
+
     <nav class="site-nav">
-      <a href="{{ " /" | relative_url }}">Blog</a>
-      <a href="{{ " /about/" | relative_url }}">About</a>
-      {% if site.social.github %}
-      <a href="https://github.com/{{ site.social.github }}" target="_blank">GitHub</a>
-      {% endif %}
-      {% if site.social.twitter %}
-      <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank">Twitter</a>
-      {% endif %}
-      {% if site.social.linkedin %}
-      <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a>
-      {% endif %}
+      <div class="nav-links">
+        <a class="page-link" href="{{ "/about/" | relative_url }}">About</a>
+        <a rel="me" href="https://www.linkedin.com/in/{{ site.social.linkedin }}" title="LinkedIn" target="_blank">
+          <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>
+        </a>
+      </div>
     </nav>
   </div>
 </header>
