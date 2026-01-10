@@ -15,9 +15,9 @@
 }
 
 :root {
-  --bg-primary: #0a0a0a;
-  --bg-surface: #111111;
-  --bg-hover: #1a1a1a;
+  --bg-primary: #1a1a1a;
+  --bg-surface: #141414;
+  --bg-hover: #222222;
   --border: #222222;
   --text-primary: #d4d4d4;
   --text-muted: #737373;
@@ -112,7 +112,7 @@ a:hover {
 }
 
 .nav-link {
-  color: var(--text-muted);
+  color: var(--text-primary);
   font-size: 0.875rem;
   text-decoration: none;
   transition: color 0.15s ease;
