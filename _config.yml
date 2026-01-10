@@ -15,12 +15,12 @@ social:
 
 # Certifications
 certifications:
-  - name: "SAL1"
-    year: "Oct 2025"
-  - name: "Security+"
-    year: "Jan 2026"
   - name: "CySA+"
     year: "Feb 2026"
+  - name: "Security+"
+    year: "Jan 2026"
+  - name: "SAL1"
+    year: "Oct 2025"
 
 # Skills
 skills:
