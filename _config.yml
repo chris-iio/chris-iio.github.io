@@ -22,6 +22,15 @@ certifications:
   - name: "CySA+"
     year: "2023"
 
+# Skills
+skills:
+  - Python
+  - Linux
+  - AWS
+  - Splunk
+  - Wireshark
+  - Burp Suite
+
 # Minima theme settings
 minima:
   skin: dark # Options: auto, classic, dark, solarized

@@ -4,6 +4,11 @@ layout: default
 
 <div class="home">
 
+  <div class="home-intro">
+    <h1>Learning Journal</h1>
+    <p class="intro-text">Documenting my daily journey in cybersecurity and technology.</p>
+  </div>
+
   {{ content }}
 
   {% if site.posts.size > 0 %}
@@ -17,11 +22,13 @@ layout: default
           </a>
         </h3>
         {% if post.excerpt %}
-          {{ post.excerpt }}
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         {% endif %}
       </li>
       {% endfor %}
     </ul>
+  {% else %}
+    <p class="no-posts">No journal entries yet. Check back soon.</p>
   {% endif %}
 
 </div>

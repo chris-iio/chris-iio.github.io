@@ -354,6 +354,48 @@ a:hover {
   font-weight: 400;
 }
 
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #333333;
+  color: #e8e8e8;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Multiple sidebar sections */
+.sidebar-section + .sidebar-section {
+  margin-top: 1rem;
+}
+
+/* Home Intro */
+.home-intro {
+  margin-bottom: 2rem;
+}
+
+.home-intro h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text {
+  color: #9ca3af;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.no-posts {
+  color: #9ca3af;
+  font-style: italic;
+}
+
 /* About Page */
 .page-content article {
   background-color: #242424;

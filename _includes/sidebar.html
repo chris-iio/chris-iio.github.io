@@ -1,5 +1,13 @@
 <aside class="sidebar">
   <div class="sidebar-section">
+    <h2 class="sidebar-title">Skills</h2>
+    <div class="skills-list">
+      {% for skill in site.skills %}
+      <span class="skill-tag">{{ skill }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="sidebar-section">
     <h2 class="sidebar-title">Certs</h2>
     <ul class="cert-list">
       {% for cert in site.certifications %}
