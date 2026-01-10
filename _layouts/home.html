@@ -5,8 +5,8 @@ layout: default
 <div class="home">
 
   <div class="home-intro">
-    <h1>Learning Journal</h1>
-    <p class="intro-text">Documenting my daily journey in cybersecurity and technology.</p>
+    <h1>learning journal</h1>
+    <p class="intro-text">documenting my journey in cybersecurity</p>
   </div>
 
   {{ content }}
@@ -15,20 +15,18 @@ layout: default
     <ul class="post-list">
       {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
+        <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
         {% if post.excerpt %}
-          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
         {% endif %}
       </li>
       {% endfor %}
     </ul>
   {% else %}
-    <p class="no-posts">No journal entries yet. Check back soon.</p>
+    <p class="no-posts">no entries yet</p>
   {% endif %}
 
 </div>
