@@ -15,9 +15,9 @@
 }
 
 :root {
-  --bg-primary: #1a1a1a;
-  --bg-surface: #141414;
-  --bg-hover: #222222;
+  --bg-primary: #262626;
+  --bg-surface: #1f1f1f;
+  --bg-hover: #2e2e2e;
   --border: #222222;
   --text-primary: #d4d4d4;
   --text-muted: #737373;
@@ -93,16 +93,16 @@ a:hover {
 .site-title {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--text-primary);
   text-decoration: none;
 }
 
 .site-title:hover {
-  color: var(--text-primary);
+  color: var(--accent);
 }
 
 .prompt {
-  color: var(--text-muted);
+  color: var(--text-primary);
 }
 
 .site-nav {
