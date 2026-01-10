@@ -9,7 +9,12 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        {{ content }}
+        <div class="content-grid">
+          <div class="main-content">
+            {{ content }}
+          </div>
+          {% include sidebar.html %}
+        </div>
       </div>
     </main>
 
