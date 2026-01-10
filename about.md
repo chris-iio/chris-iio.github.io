@@ -4,4 +4,4 @@ permalink: /about/
 title: About
 ---
 
-Hi I'm Chris
+hi i'm chris

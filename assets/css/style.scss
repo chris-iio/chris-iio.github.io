@@ -57,14 +57,14 @@ p {
   color: var(--text-primary);
 }
 
-a {
-  color: var(--accent);
+a, a:visited {
+  color: var(--text-primary);
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
 a:hover {
-  color: var(--text-primary);
+  color: var(--accent);
 }
 
 /* Layout Container */
