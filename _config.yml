@@ -32,7 +32,7 @@ minima:
 
 # SEO and metadata
 lang: en-US
-timezone: America/New_York # Update to your timezone
+timezone: Korea/Seoul # Update to your timezone
 
 # Build settings
 markdown: kramdown
