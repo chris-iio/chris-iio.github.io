@@ -393,11 +393,6 @@ a:hover {
     font-size: 0.75rem;
 }
 
-.skill-tag::before {
-    content: "";
-    color: var(--accent);
-}
-
 /* Certs */
 .cert-list {
     list-style: none;
@@ -479,11 +474,7 @@ a:hover {
 }
 
 /* Selection */
-::selection {
-    background-color: var(--accent);
-    color: var(--bg-primary);
-}
-
+::selection,
 ::-moz-selection {
     background-color: var(--accent);
     color: var(--bg-primary);

@@ -19,10 +19,6 @@ layout: default
             <img src="{{ page.image | relative_url }}" alt="{{ page.name }} Certificate" class="cert-image">
         </div>
         {% endif %}
-        {% else %}
-        <div class="cert-placeholder">
-            <p>Certificate image not available.</p>
-        </div>
         {% endif %}
 
         {{ content }}
@@ -50,11 +46,4 @@ layout: default
         display: block;
     }
 
-    .cert-placeholder {
-        padding: 4rem 2rem;
-        text-align: center;
-        border: 1px dashed var(--border);
-        color: var(--text-muted);
-        margin: 2rem 0;
-    }
 </style>
