@@ -12,7 +12,7 @@
     <ul class="cert-list">
       {% for cert in site.certifications %}
       <li class="cert-item">
-        <span class="cert-name">{{ cert.name }}</span>
+        <a href="{{ cert.url | relative_url }}" class="cert-name">{{ cert.name }}</a>
         <span class="cert-dots"></span>
         <span class="cert-year">{{ cert.year }}</span>
       </li>

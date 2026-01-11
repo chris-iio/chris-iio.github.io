@@ -1,7 +1,4 @@
----
----
-
-@import "minima";
+--- --- @import "minima";
 
 /* ==========================================
    TERMINAL THEME - Chris Infante Blog
@@ -420,6 +417,12 @@ a:hover {
 
 .cert-name {
   color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.cert-name:hover {
+  color: var(--accent);
 }
 
 .cert-dots {
