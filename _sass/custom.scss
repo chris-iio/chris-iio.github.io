@@ -281,7 +281,7 @@ a:hover {
     margin-bottom: 0.5rem;
 }
 
-.post-title::before {
+.page-content .post-title::before {
     content: "> ";
     color: var(--accent);
 }
