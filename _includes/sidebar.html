@@ -10,7 +10,8 @@
   <div class="sidebar-section">
     <h2 class="sidebar-title">certs</h2>
     <ul class="cert-list">
-      {% for cert in site.certifications %}
+      {% assign sorted_certs = site.certifications | sort: 'date' | reverse %}
+      {% for cert in sorted_certs %}
       <li class="cert-item">
         <a href="{{ cert.url | relative_url }}" class="cert-name">{{ cert.name }}</a>
         <span class="cert-dots"></span>
