@@ -10,9 +10,15 @@ layout: default
 
     <div class="post-content">
         {% if page.image %}
+        {% if page.image contains '.pdf' %}
+        <div class="cert-image-container">
+            <iframe src="{{ page.image }}" class="cert-pdf" title="{{ page.name }} Certificate"></iframe>
+        </div>
+        {% else %}
         <div class="cert-image-container">
             <img src="{{ page.image | relative_url }}" alt="{{ page.name }} Certificate" class="cert-image">
         </div>
+        {% endif %}
         {% else %}
         <div class="cert-placeholder">
             <p>Certificate image not available.</p>
@@ -34,6 +40,13 @@ layout: default
     .cert-image {
         width: 100%;
         height: auto;
+        display: block;
+    }
+
+    .cert-pdf {
+        width: 100%;
+        height: 600px;
+        border: none;
         display: block;
     }
 
