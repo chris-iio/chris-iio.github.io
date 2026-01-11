@@ -1,0 +1,508 @@
+/* ==========================================
+   TERMINAL THEME - Chris Infante Blog
+   ========================================== */
+
+/* CSS Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #1f1f1f;
+    --bg-header: #262626;
+    --bg-surface: #1a1a1a;
+    --bg-hover: #2a2a2a;
+    --border: #222222;
+    --text-primary: #d4d4d4;
+    --text-muted: #737373;
+    --accent: #fb923c;
+    --accent-dim: #f97316;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+a,
+a:visited,
+a:active {
+    color: var(--text-primary) !important;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: var(--accent) !important;
+}
+
+/* Layout Container */
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.site-title:hover {
+    color: var(--accent);
+}
+
+.prompt {
+    color: var(--text-primary);
+}
+
+.cursor {
+    color: var(--accent);
+    font-size: 0.8em;
+    margin-left: 0.4em;
+    display: inline-block;
+    animation: blink 2s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+.nav-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-linkedin {
+    width: 18px;
+    height: 18px;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+}
+
+.nav-icon:hover .icon-linkedin {
+    color: var(--accent);
+}
+
+/* Main Content Grid */
+.page-content {
+    padding: 2rem 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 3rem;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    .main-content {
+        order: 1;
+    }
+}
+
+/* Main Content Area */
+.main-content {
+    min-width: 0;
+}
+
+/* Home Page */
+.home {
+    width: 100%;
+}
+
+.no-posts {
+    color: var(--text-muted);
+}
+
+/* Post List */
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    transition: background-color 0.15s ease;
+}
+
+.post-list li:last-child {
+    border-bottom: none;
+}
+
+.post-list li:hover {
+    background-color: var(--bg-hover);
+    margin: 0 -1rem;
+    padding: 1rem;
+}
+
+.post-meta {
+    display: inline;
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin-right: 1rem;
+}
+
+.post-meta::before {
+    content: "[";
+}
+
+.post-meta::after {
+    content: "]";
+}
+
+.post-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.post-link:hover {
+    color: var(--accent);
+}
+
+.post-excerpt {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0.5rem 0 0 0;
+}
+
+/* Individual Post */
+.post {
+    padding: 0;
+}
+
+.post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-title {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.post-title::before {
+    content: "> ";
+    color: var(--accent);
+}
+
+.post-content {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.post-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.post-content h2::before {
+    content: "## ";
+    color: var(--accent);
+}
+
+.post-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.post-content h3::before {
+    content: "### ";
+    color: var(--accent);
+}
+
+.post-content p {
+    margin-bottom: 1rem;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: var(--text-primary);
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.post-content li::marker {
+    color: var(--accent);
+}
+
+.post-content code {
+    background-color: var(--bg-surface);
+    color: var(--accent);
+    padding: 0.2rem 0.4rem;
+    font-size: 0.85rem;
+    font-family: inherit;
+}
+
+.post-content pre {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    padding: 1rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.post-content pre code {
+    background-color: transparent;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+.post-content blockquote {
+    border-left: 2px solid var(--accent);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: var(--text-muted);
+}
+
+/* Sidebar */
+.sidebar {
+    position: sticky;
+    top: calc(1rem + 52px);
+}
+
+.sidebar-section {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-title {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    text-transform: lowercase;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--border);
+    display: inline-block;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    color: var(--text-primary);
+    font-size: 0.75rem;
+}
+
+.skill-tag::before {
+    content: "";
+    color: var(--accent);
+}
+
+/* Certs */
+.cert-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+    font-size: 0.8rem;
+}
+
+.cert-name {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.cert-name:hover {
+    color: var(--accent);
+}
+
+.cert-dots {
+    flex: 1;
+    margin: 0 0.5rem;
+    border-bottom: 1px dotted var(--border);
+}
+
+.cert-year {
+    color: var(--text-muted);
+}
+
+/* About Page */
+.page-content article {
+    max-width: 700px;
+}
+
+.page-content article h1::before {
+    content: "# ";
+    color: var(--accent);
+}
+
+.page-content article h2::before {
+    content: "## ";
+    color: var(--accent);
+}
+
+/* Footer (hidden) */
+.site-footer {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        padding: 0 1rem;
+    }
+
+    .site-header {
+        padding: 0.75rem 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .page-content {
+        padding: 1.5rem 0;
+    }
+}
+
+/* Selection */
+::selection {
+    background-color: var(--accent);
+    color: var(--bg-primary);
+}
+
+::-moz-selection {
+    background-color: var(--accent);
+    color: var(--bg-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
