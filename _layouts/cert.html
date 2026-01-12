@@ -10,15 +10,13 @@ layout: default
 
     <div class="post-content">
         {% if page.image %}
-        {% if page.image contains '.pdf' %}
         <div class="cert-image-container">
+            {% if page.image contains '.pdf' %}
             <iframe src="{{ page.image }}" class="cert-pdf" title="{{ page.name }} Certificate"></iframe>
-        </div>
-        {% else %}
-        <div class="cert-image-container">
+            {% else %}
             <img src="{{ page.image | relative_url }}" alt="{{ page.name }} Certificate" class="cert-image">
+            {% endif %}
         </div>
-        {% endif %}
         {% endif %}
 
         {{ content }}
@@ -45,5 +43,4 @@ layout: default
         border: none;
         display: block;
     }
-
 </style>
