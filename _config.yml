@@ -35,6 +35,7 @@ lang: en-US
 timezone: Korea/Seoul # Update to your timezone
 
 # Build settings
+future: true
 markdown: kramdown
 theme: minima
 plugins:
