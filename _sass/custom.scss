@@ -104,6 +104,12 @@ a:hover {
     align-items: center;
 }
 
+.header-title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
 .site-title {
     font-size: 1rem;
     font-weight: 500;
@@ -113,6 +119,14 @@ a:hover {
 
 .site-title:hover {
     color: var(--accent);
+}
+
+.site-tagline {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
 }
 
 .prompt {
