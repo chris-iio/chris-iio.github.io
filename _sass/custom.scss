@@ -107,7 +107,6 @@ a:hover {
 .header-title-group {
     display: flex;
     flex-direction: column;
-    gap: 0;
 }
 
 .site-title {
@@ -499,8 +498,7 @@ a:hover {
 }
 
 /* Selection */
-::selection,
-::-moz-selection {
+::selection {
     background-color: var(--accent);
     color: var(--bg-primary);
 }
