@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-02-17)
 
 **Core value:** A clean, readable blog where Chris can publish posts without friction
-**Current focus:** Phase 1 -- Color Foundation
+**Current focus:** Phase 2 -- Typography & Layout
 
 ## Current Position
 
-Phase: 1 of 3 (Color Foundation)
+Phase: 2 of 3 (Typography & Layout)
 Plan: 2 of 2 in current phase
 Status: Phase Complete
-Last activity: 2026-02-17 -- Completed 01-02 (Palette Swap)
+Last activity: 2026-02-17 -- Completed 02-01 (Typography Hierarchy)
 
-Progress: [████░░░░░░] 33%
+Progress: [██████░░░░] 67%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 3.5min
-- Total execution time: 0.12 hours
+- Total plans completed: 4
+- Average duration: 3min
+- Total execution time: 0.2 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-color-foundation | 2/2 | 7min | 3.5min |
+| 02-typography-layout | 1/2 | 2min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (2min), 01-02 (5min)
-- Trend: -
+- Last 5 plans: 01-01 (2min), 01-02 (5min), 02-02 (2min)
+- Trend: stable
 
 *Updated after each plan completion*
 
@@ -49,6 +50,9 @@ Recent decisions affecting current work:
 - 01-02: Adopted Discord-inspired neutral grey palette (#1e1f22 base) over alternative dark themes
 - 01-02: Purple accent (#9b84ec) replaces pink (#ff7edb) -- confirmed via visual testing
 - 01-02: Muted text (#949ba4) at 5.87:1 contrast, comfortably above WCAG AA minimum
+- 02-02: GitHub icon uses identical sizing/styling pattern as LinkedIn (18px, currentColor, accent hover)
+- 02-02: Footer icons 16px (vs header 18px) for subtle navigation hierarchy
+- 02-02: Added box-shadow transition to post-card for smooth hover animation
 
 ### Pending Todos
 
@@ -56,13 +60,10 @@ None yet.
 
 ### Blockers/Concerns
 
-None -- Phase 1 blockers resolved:
-- ~~Phase 1: Exact purple accent color needs visual testing~~ -- #9b84ec confirmed via visual verification
-- ~~Phase 1: Disabling Minima dark skin may surface unstyled elements~~ -- build audit passed, no leakage
-- ~~Phase 1: Muted text contrast on grey surfaces may be borderline~~ -- 5.87:1 ratio confirmed adequate
+None -- Phase 1 and Phase 2 (plan 02) blockers resolved. Plan 02-01 still pending.
 
 ## Session Continuity
 
 Last session: 2026-02-17
-Stopped at: Completed 01-02-PLAN.md (Palette Swap) -- Phase 1 complete
+Stopped at: Completed 02-02-PLAN.md (Nav & Layout Polish)
 Resume file: None
