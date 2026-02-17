@@ -1,0 +1,82 @@
+// ==========================================
+//  SYNTAX HIGHLIGHTING - Rouge Token Colors
+//  Custom dark theme using site CSS variables
+// ==========================================
+
+// Scoped wrapper rules to beat Minima's defaults
+.post-content .highlighter-rouge,
+.post-content figure.highlight {
+    margin-bottom: 1.25rem;
+}
+
+.highlight {
+    background: var(--bg-surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0;
+
+    pre {
+        margin: 0;
+        padding: 1.25rem;
+        overflow-x: auto;
+    }
+
+    code {
+        font-family: inherit;
+        font-size: 0.85rem;
+        background: transparent;
+        padding: 0;
+        color: inherit;
+    }
+
+    // Comments
+    .c, .c1, .cm, .cp, .cs, .ch { color: var(--text-muted); font-style: italic; }
+
+    // Keywords
+    .k, .kc, .kd, .kn, .kp, .kr, .kv { color: var(--accent); }
+    .kt { color: var(--syntax-amber); }
+
+    // Strings
+    .s, .s1, .s2, .sb, .sc, .sd, .sh, .sx, .dl { color: var(--syntax-green); }
+    .sr { color: var(--syntax-amber); }  // Regex
+    .si { color: var(--syntax-green); }  // String interpolation
+    .se { color: var(--syntax-amber); }  // String escape
+
+    // Numbers
+    .m, .mf, .mh, .mi, .mo, .mb, .mx, .il { color: var(--syntax-amber); }
+
+    // Names
+    .nf, .fm { color: var(--syntax-blue); }   // Functions
+    .nc, .nn { color: var(--syntax-gold); }    // Classes, namespaces
+    .nb, .bp { color: var(--syntax-blue); }    // Built-ins
+    .na { color: var(--syntax-blue); }         // Attributes
+    .no { color: var(--syntax-amber); }        // Constants
+    .ne { color: var(--syntax-red); }          // Exceptions
+    .ni { color: var(--text-primary); }        // Entity
+    .nl { color: var(--syntax-blue); }         // Label
+    .nt { color: var(--syntax-red); }          // Tag (HTML)
+    .nv, .vi, .vg, .vc { color: var(--text-primary); }  // Variables
+
+    // Operators
+    .o, .ow { color: var(--text-primary); font-weight: 500; }
+
+    // Generic
+    .gd { color: var(--syntax-red); }         // Diff deleted
+    .gi { color: var(--syntax-green); }        // Diff inserted
+    .ge { font-style: italic; }               // Emphasis
+    .gs { font-weight: bold; }                // Strong
+    .gh { color: var(--text-primary); font-weight: 500; } // Heading
+    .gu { color: var(--text-muted); }         // Subheading
+    .go { color: var(--text-muted); }         // Output
+    .gp { color: var(--text-muted); }         // Prompt
+
+    // Error
+    .err { color: var(--syntax-red); }
+
+    // Punctuation
+    .p, .pi { color: var(--text-primary); }
+
+    // Whitespace
+    .w { color: var(--text-primary); }
+}
