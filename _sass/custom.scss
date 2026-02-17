@@ -292,7 +292,7 @@ body a:hover {
     border-radius: 6px;
     background-color: var(--bg-surface);
     border: 1px solid var(--border);
-    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
     text-decoration: none;
 }
 
@@ -525,6 +525,43 @@ body a:hover {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.site-footer {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-link {
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-link:hover {
+    color: var(--accent);
 }
 
 /* ==========================================

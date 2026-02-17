@@ -8,7 +8,6 @@ layout: default
 
   {% if site.posts.size > 0 %}
     <section class="posts-section">
-      <h2 class="section-title">posts</h2>
       <div class="post-list">
         {% for post in site.posts %}
         <a href="{{ post.url | relative_url }}" class="post-card">
