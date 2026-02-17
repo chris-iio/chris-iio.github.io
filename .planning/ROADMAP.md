@@ -28,11 +28,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Page loads show no color flash (critical CSS in head.html matches the stylesheet)
   4. Every text/background combination passes WCAG AA contrast (4.5:1 minimum)
   5. Scrollbar, text selection, and accent elements use the updated palette
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md -- Technical cleanup: disable Minima dark skin, remove !important, fix hardcoded tagline color
+- [ ] 01-02-PLAN.md -- Atomic palette swap: replace all color tokens and sync critical CSS
 
 ### Phase 2: Typography & Layout
 **Goal**: Text is readable with clear visual hierarchy, navigation is complete with all intended links, and the site has a proper footer
@@ -67,10 +67,10 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3
+Phases execute in numeric order: 1 -> 2 -> 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Color Foundation | 0/? | Not started | - |
+| 1. Color Foundation | 0/2 | Planned | - |
 | 2. Typography & Layout | 0/? | Not started | - |
 | 3. Content Polish | 0/? | Not started | - |
