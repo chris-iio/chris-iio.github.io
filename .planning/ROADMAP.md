@@ -12,7 +12,7 @@ A CSS-only visual refresh of an existing Jekyll blog. The work moves from founda
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Color Foundation** - Technical cleanup and complete palette swap from purple to Discord-style dark grey
+- [x] **Phase 1: Color Foundation** - Technical cleanup and complete palette swap from purple to Discord-style dark grey (completed 2026-02-17)
 - [ ] **Phase 2: Typography & Layout** - Heading hierarchy, fluid scaling, readable links, navigation updates, and footer
 - [ ] **Phase 3: Content Polish** - Syntax-highlighted code blocks and anchor links on headings
 
@@ -28,7 +28,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Page loads show no color flash (critical CSS in head.html matches the stylesheet)
   4. Every text/background combination passes WCAG AA contrast (4.5:1 minimum)
   5. Scrollbar, text selection, and accent elements use the updated palette
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
 - [ ] 01-01-PLAN.md -- Technical cleanup: disable Minima dark skin, remove !important, fix hardcoded tagline color
@@ -71,6 +71,6 @@ Phases execute in numeric order: 1 -> 2 -> 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Color Foundation | 0/2 | Planned | - |
+| 1. Color Foundation | 0/2 | Complete    | 2026-02-17 |
 | 2. Typography & Layout | 0/? | Not started | - |
 | 3. Content Polish | 0/? | Not started | - |
