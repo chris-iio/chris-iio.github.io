@@ -28,10 +28,10 @@ Progress: [██████░░░░] 67%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-color-foundation | 2/2 | 7min | 3.5min |
-| 02-typography-layout | 1/2 | 2min | 2min |
+| 02-typography-layout | 2/2 | 5min | 2.5min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (2min), 01-02 (5min), 02-02 (2min)
+- Last 5 plans: 01-01 (2min), 01-02 (5min), 02-02 (2min), 02-01 (3min)
 - Trend: stable
 
 *Updated after each plan completion*
@@ -53,6 +53,8 @@ Recent decisions affecting current work:
 - 02-02: GitHub icon uses identical sizing/styling pattern as LinkedIn (18px, currentColor, accent hover)
 - 02-02: Footer icons 16px (vs header 18px) for subtle navigation hierarchy
 - 02-02: Added box-shadow transition to post-card for smooth hover animation
+- 02-01: Used clamp(15px, 0.875rem + 0.25vw, 17px) for fluid base font instead of media query breakpoints
+- 02-01: Scoped link styles to .post-content a and .about-content a to avoid affecting nav/card links
 
 ### Pending Todos
 
@@ -60,10 +62,10 @@ None yet.
 
 ### Blockers/Concerns
 
-None -- Phase 1 and Phase 2 (plan 02) blockers resolved. Plan 02-01 still pending.
+None -- Phase 2 complete. All plans executed.
 
 ## Session Continuity
 
 Last session: 2026-02-17
-Stopped at: Completed 02-02-PLAN.md (Nav & Layout Polish)
+Stopped at: Completed 02-01-PLAN.md (Typography Hierarchy) -- Phase 2 complete
 Resume file: None
