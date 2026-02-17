@@ -27,7 +27,6 @@ skills:
 
 # Minima theme settings
 minima:
-  skin: dark # Options: auto, classic, dark, solarized
   social_links:
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/chr1sinfante" }
 
