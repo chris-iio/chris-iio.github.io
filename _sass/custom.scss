@@ -22,7 +22,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: clamp(15px, 0.875rem + 0.25vw, 17px);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -48,9 +48,9 @@ h6 {
     margin-bottom: 1rem;
 }
 
-h1 { font-size: 1.5rem; }
-h2 { font-size: 1.25rem; }
-h3 { font-size: 1.1rem; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
 h4 { font-size: 1rem; }
 
 p {
@@ -160,6 +160,17 @@ body a:hover {
     color: var(--accent);
 }
 
+.icon-github {
+    width: 18px;
+    height: 18px;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+}
+
+.nav-icon:hover .icon-github {
+    color: var(--accent);
+}
+
 /* Hamburger menu - hidden on desktop */
 .nav-toggle {
     display: none;
@@ -218,7 +229,7 @@ body a:hover {
 }
 
 .hero-name {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -341,7 +352,7 @@ body a:hover {
 }
 
 .post-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
@@ -360,7 +371,7 @@ body a:hover {
 .post-content h2 {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .post-content h3 {
@@ -433,7 +444,7 @@ body a:hover {
 }
 
 .about-content h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -519,10 +530,6 @@ body a:hover {
    RESPONSIVE
    ========================================== */
 @media (max-width: 640px) {
-    html {
-        font-size: 15px;
-    }
-
     .wrapper {
         padding: 0 1rem;
     }
@@ -560,10 +567,6 @@ body a:hover {
 
     .hero {
         padding: 2rem 0 1.5rem;
-    }
-
-    .hero-name {
-        font-size: 1.5rem;
     }
 
     .page-content {
