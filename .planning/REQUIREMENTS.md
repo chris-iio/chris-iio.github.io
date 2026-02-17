@@ -78,28 +78,28 @@ Deferred to future. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CLR-01 | TBD | Pending |
-| CLR-02 | TBD | Pending |
-| CLR-03 | TBD | Pending |
-| CLR-04 | TBD | Pending |
-| CLR-05 | TBD | Pending |
-| TYP-01 | TBD | Pending |
-| TYP-02 | TBD | Pending |
-| TYP-03 | TBD | Pending |
-| NAV-01 | TBD | Pending |
-| NAV-02 | TBD | Pending |
-| NAV-03 | TBD | Pending |
-| NAV-04 | TBD | Pending |
-| CNT-01 | TBD | Pending |
-| CNT-02 | TBD | Pending |
-| TCH-01 | TBD | Pending |
-| TCH-02 | TBD | Pending |
+| CLR-01 | Phase 1 | Pending |
+| CLR-02 | Phase 1 | Pending |
+| CLR-03 | Phase 1 | Pending |
+| CLR-04 | Phase 1 | Pending |
+| CLR-05 | Phase 1 | Pending |
+| TYP-01 | Phase 2 | Pending |
+| TYP-02 | Phase 2 | Pending |
+| TYP-03 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Pending |
+| NAV-02 | Phase 2 | Pending |
+| NAV-03 | Phase 2 | Pending |
+| NAV-04 | Phase 2 | Pending |
+| CNT-01 | Phase 3 | Pending |
+| CNT-02 | Phase 3 | Pending |
+| TCH-01 | Phase 1 | Pending |
+| TCH-02 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 16 total
-- Mapped to phases: 0
-- Unmapped: 16
+- Mapped to phases: 16
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-17*
-*Last updated: 2026-02-17 after initial definition*
+*Last updated: 2026-02-17 after roadmap creation*
