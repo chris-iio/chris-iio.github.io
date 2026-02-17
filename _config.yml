@@ -8,6 +8,7 @@ baseurl: ""
 author:
   name: Chris
   bio: "Cyber Security and Cypherpunk Enthusiast"
+  intro: "Based in Seoul. Learning, breaking, building. This is where I write about security, privacy, and the things I'm figuring out along the way."
 
 # Social media links
 social:
