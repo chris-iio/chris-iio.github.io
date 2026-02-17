@@ -299,7 +299,8 @@ body a:hover {
 .post-card:hover {
     background-color: var(--bg-hover);
     border-color: var(--accent);
-    transform: translateX(4px);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .post-card-title {
