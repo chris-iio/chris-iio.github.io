@@ -457,6 +457,34 @@ body a:hover {
     text-decoration-color: var(--text-primary);
 }
 
+/* Heading anchor links */
+.post-content .heading-anchor {
+    opacity: 0;
+    text-decoration: none;
+    color: var(--text-muted);
+    padding-left: 0.3em;
+    font-size: 0.85em;
+    transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.post-content h2:hover .heading-anchor,
+.post-content h3:hover .heading-anchor,
+.post-content h4:hover .heading-anchor {
+    opacity: 1;
+}
+
+.post-content .heading-anchor:hover {
+    color: var(--accent);
+}
+
+/* Override post-content link styles for anchor links */
+.post-content a.heading-anchor {
+    color: var(--text-muted);
+    text-decoration: none;
+    text-decoration-color: transparent;
+    text-underline-offset: initial;
+}
+
 /* ==========================================
    ABOUT PAGE
    ========================================== */
