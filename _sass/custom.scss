@@ -102,13 +102,13 @@ a:hover {
 
 .site-title {
     font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-primary);
+    font-weight: 600;
+    color: var(--accent) !important;
     text-decoration: none;
 }
 
 .site-title:hover {
-    color: var(--accent);
+    color: var(--text-primary) !important;
 }
 
 .site-tagline {
@@ -134,7 +134,7 @@ a:hover {
 }
 
 .nav-link {
-    color: var(--text-primary);
+    color: var(--text-muted);
     font-size: 0.875rem;
     text-decoration: none;
     transition: color 0.15s ease;
@@ -142,6 +142,10 @@ a:hover {
 
 .nav-link:hover {
     color: var(--accent);
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
 }
 
 .nav-icon {
@@ -255,16 +259,18 @@ a:hover {
    POST LIST (Cards)
    ========================================== */
 .posts-section {
-    margin-top: 0;
+    margin-top: 1rem;
 }
 
 .section-title {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
     color: var(--accent);
-    text-transform: lowercase;
-    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
     margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
 }
 
 .post-list {
@@ -277,25 +283,27 @@ a:hover {
     display: block;
     padding: 1.25rem;
     border-radius: 6px;
-    border: 1px solid transparent;
-    transition: background-color 0.15s ease, border-color 0.15s ease;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
     text-decoration: none !important;
 }
 
 .post-card:hover {
     background-color: var(--bg-hover);
-    border-color: var(--border);
+    border-color: var(--accent);
+    transform: translateX(4px);
 }
 
 .post-card-title {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--text-primary);
+    color: var(--accent);
     margin-bottom: 0.4rem;
 }
 
 .post-card:hover .post-card-title {
-    color: var(--accent);
+    color: var(--text-primary);
 }
 
 .post-card-meta {
@@ -305,6 +313,10 @@ a:hover {
     font-size: 0.75rem;
     color: var(--text-muted);
     margin-bottom: 0.5rem;
+}
+
+.post-card-meta time {
+    color: var(--accent-dim);
 }
 
 .reading-time::before {

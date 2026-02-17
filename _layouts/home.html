@@ -4,14 +4,6 @@ layout: default
 
 <div class="home">
 
-  <section class="hero">
-    <h1 class="hero-name">{{ site.author.name }}</h1>
-    <p class="hero-bio">{{ site.author.bio }}</p>
-    {% if site.author.intro %}
-      <p class="hero-intro">{{ site.author.intro }}</p>
-    {% endif %}
-  </section>
-
   {{ content }}
 
   {% if site.posts.size > 0 %}
