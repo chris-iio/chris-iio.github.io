@@ -59,10 +59,11 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. Code blocks in posts display language-specific syntax highlighting with colors that fit the dark theme
   2. Hovering over a post heading reveals a clickable anchor link icon for sharing that section's URL
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 03-01: TBD
+- [ ] 03-01-PLAN.md -- Syntax highlighting: Rouge token CSS with dark theme colors
+- [ ] 03-02-PLAN.md -- Anchor headings: hoverable '#' links on post headings (h2-h4)
 
 ## Progress
 
@@ -73,4 +74,4 @@ Phases execute in numeric order: 1 -> 2 -> 3
 |-------|----------------|--------|-----------|
 | 1. Color Foundation | 2/2 | Complete    | 2026-02-17 |
 | 2. Typography & Layout | 0/2 | Planned | - |
-| 3. Content Polish | 0/? | Not started | - |
+| 3. Content Polish | 0/2 | Planned | - |
